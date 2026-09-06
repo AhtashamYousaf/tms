@@ -124,9 +124,7 @@ class SeedTranslations extends Command
     {
         DB::transaction(function () use ($rows, $tagIds): void {
             DB::table('translations')->insert($rows);
-
-            // MySQL's LAST_INSERT_ID() (and therefore PDO::lastInsertId()) reports the
-            // FIRST auto-generated id of a multi-row insert, not the last.
+            
             $firstId = (int) DB::getPdo()->lastInsertId();
             $lastId = $firstId + count($rows) - 1;
 

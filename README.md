@@ -130,7 +130,6 @@ GET /api/translations/export?tag=mobile
 ## Seeding 100k+ Records
 
 ```bash
-# inside the app container, or locally if you have PHP/Composer set up
 php artisan translations:seed --count=100000
 
 # customize
