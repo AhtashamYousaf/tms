@@ -169,8 +169,8 @@ php artisan translations:seed --count=250000 --locales=en,fr,es,de,it --tags=web
 
 ```bash
 php artisan test
-php artisan test --exclude-group=performance   # fast run: auth, CRUD, search, export, security
-php artisan test --group=performance           # only the benchmark suite
+php artisan test --exclude-group=performance   # auth, CRUD, search, export, security
+php artisan test --group=performance          
 ```
 
 ## Design Decisions
