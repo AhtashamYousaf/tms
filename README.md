@@ -25,7 +25,7 @@ Laravel Sanctum, and serves a large, frequently-changing dataset to frontend app
 ## Installation
 
 ```bash
-git clone <repo-url> tms
+git clone https://github.com/AhtashamYousaf/tms.git
 cd tms
 cp .env.example .env
 composer install
