@@ -187,7 +187,4 @@ php artisan test --group=performance
 - **Query builder for export, Eloquent for CRUD/search.** CRUD and search benefit from
   Eloquent's relationships, casts, and mass-assignment protection; the export's only job is to
   move rows to JSON as fast as possible, where Eloquent hydration is pure overhead.
-- **Cache-tag flush over fine-grained invalidation.** A single tag flush is simple, correct by
-  construction, and cheap at this scale; targeted per-locale/tag invalidation would add
-  complexity for a marginal hit-rate gain that wasn't worth it in a 2-hour-scoped build.
 - **`predis` as the Redis client everywhere** (`REDIS_CLIENT=predis`)
